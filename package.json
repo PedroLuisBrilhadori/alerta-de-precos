@@ -12,7 +12,8 @@
   "dependencies": {
     "node-notifier": "^10.0.0",
     "puppeteer": "^10.1.0",
-    "readline-sync": "^1.4.10"
+    "readline-sync": "^1.4.10",
+    "shelljs": "^0.8.4"
   },
   "devDependencies": {}
 }
