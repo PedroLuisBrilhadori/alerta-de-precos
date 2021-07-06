@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const notifier = require('node-notifier');
 
 let url = 'https://www.google.com/search?q=mglu3';
 
@@ -10,7 +11,7 @@ let url = 'https://www.google.com/search?q=mglu3';
         return document.getElementsByClassName("IsqQVc NprOob")[0].innerText;
     });
     console.log(preco);
+    notifier.notify(preco);
     await page.screenshot({path: 'teste.png'});
     await browser.close();
 })();
-
